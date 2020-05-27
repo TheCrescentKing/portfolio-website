@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=no" />
+
+    <title>Breakout!</title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalise.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/breakout.css">
+
+    <script src="scripts/OSJ.js"></script>
+</head>
+<body>
+    <div id="whole" class="center-div winLossScreen">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div id="loss" class="center-div winLossScreen">
+        <h1>Aww...</h1>
+        <p id="lossScore"></p>
+        <p>Touch anywhere to try again!</p>
+    </div>
+    <div id="win" class="center-div winLossScreen">
+        <h1>Woohoo!</h1>
+        <p>Touch anywhere to have another go! ;)</p>
+    </div>
+    <script src="scripts/View.js"></script>
+    <script src="scripts/Paddle.js"></script>
+    <script src="scripts/Ball.js"></script>
+    <script src="scripts/Brick.js"></script>
+    <script src="scripts/Controller.js"></script>
+</body>
+</html>
