@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cw1.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <title>Currency Converter</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalise.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/calculator.css">
+
+
+    <!-- Icon Stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#9973c9">
+
+    <script src="scripts/shorthandSelectors.js"></script>
+</head>
+<body>
+    <div id="setCurrencyDiv" class="whiteTransparentAbsolute flexCenteredButtons">
+        <span id="setHomeCurrencyButton" class="tinyMargin bigFont boxed">Home</span>
+        <span id="setVisitingCurrencyButton" class="tinyMargin bigFont boxed">Visiting</span>
+        <span id="cancelCurrencyButton" class="tinyMargin bigFont boxed">Cancel</span>
+    </div>
+    <div id="setBankFeeDiv" class="whiteTransparentAbsolute flexCenteredButtons">
+        <h1 class="bigFont">Bank Fee Percentage</h1>
+        <input id="bankFeeInput" type="number" class="bigFont tinyMargin centerText" min="0" max="100" placeholder="%"/>
+        <p id="errorMessageBankFee" class="bigFont tinyMargin centerText">Please enter a percentage between 0 and 100</p>
+        <span id="cancelBankFeeButton" class="bigFont tinyMargin boxed">Cancel</span>
+    </div>
+    <div id="aboutPageDiv" class="whiteTransparentAbsolute flexCenteredButtons">
+        <h1 class="bigFont tinyMargin">About</h1>
+        <p class="bigFont centerText tinyMargin">Developed by John McMenemy</p>
+        <p class="smallFont centerText tinyMargin">
+            Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+        </p>
+        <span id="cancelAboutButton" class="bigFont tinyMargin boxed">Back</span>
+    </div>
+    <div id="whole">
+        <div id="topScreenDiv">
+            <div id="chosenConversion" class="smallFont whiteText boxed"></div>
+            <div id="bankFeeDisplay" class="smallFont whiteText boxed"></div>
+            <img id="menuIcon" src="resources/menuIcon.svg">
+        </div>
+        <div id="calculator">
+            <span id="display" class="boxed row">
+                <div id="text" class="bigFont whiteText">0</div>
+            </span>
+            <span id="row1" class="row">
+                <input class="numberButton bigFont" type="button" value="7" name="button7">
+                <input class="numberButton bigFont" type="button" value="8" name="button8">
+                <input class="numberButton bigFont" type="button" value="9" name="button9">
+            </span>
+            <span id="row2" class="row">
+                <input class="numberButton bigFont" type="button" value="4" name="button4">
+                <input class="numberButton bigFont" type="button" value="5" name="button5">
+                <input class="numberButton bigFont" type="button" value="6" name="button6">
+            </span>
+            <span id="row3" class="row">
+                <input class="numberButton bigFont" type="button" value="1" name="button1">
+                <input class="numberButton bigFont" type="button" value="2" name="button2">
+                <input class="numberButton bigFont" type="button" value="3" name="button3">
+            </span>
+            <span id="row4" class="row">
+                <input id="clearButton" class="numberButton bigFont" type="button" value="c" name="buttonClear">
+                <input class="numberButton bigFont" type="button" value="0" name="button0">
+                <input id="submitButton" class="numberButton bigFont" type="button" value="=" name="submit">
+            </span>
+        </div>
+        <div id="currencyMenu">
+        </div>
+    </div>
+    <script src="scripts/functions.js"></script>
+</body>
+</html>

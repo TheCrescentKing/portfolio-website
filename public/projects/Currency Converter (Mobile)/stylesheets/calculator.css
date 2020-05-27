@@ -1,0 +1,176 @@
+* {
+    margin: auto;
+    padding: auto;
+}
+
+body{
+    background-color: #532094;
+    font-size: 1vh;
+
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Future standard */
+}
+
+#whole{
+    height: 100vh;
+    width: 100vw;
+}
+
+#topScreenDiv{
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menuIcon{
+    height: 90%;
+    align-self: flex-end;
+
+    background-color: #9973C9;
+    border-radius: 100%;
+}
+
+#calculator{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 85%;
+    width: auto;
+}
+
+#display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 90%;
+    border-radius: 100%;
+
+    background-color: #9973C9;
+}
+
+#text{
+    text-align: right;
+}
+
+#setCurrencyDiv{
+    visibility: hidden;
+}
+
+#setBankFeeDiv{
+    visibility: hidden;
+}
+
+#aboutPageDiv{
+    visibility: hidden;
+}
+
+#currencyMenu{
+    width: 100%;
+    height: 85%;
+
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    overflow: auto;
+
+    background-color: #9973C9;
+
+    visibility: hidden;
+}
+
+#errorMessageBankFee{
+    visibility: hidden;
+}
+
+.boxed {
+    border: 0.5rem solid #9973C9;
+    border-radius: 25%;
+}
+
+.tinyMargin{
+    margin: 1vh;
+}
+
+.bigFont{
+    font-size: 2rem;
+}
+
+.smallFont{
+    font-size: 1rem;
+}
+
+.centerText{
+    text-align: center;
+}
+
+.row{
+    width: 100%;
+    height: auto;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.numberButton{
+    height: 90%;
+    width: 30%;
+    border-radius: 50%;
+    background-color: #DAA520;
+}
+
+.whiteText{
+    color: white;
+}
+
+.whiteTransparentAbsolute{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.flexCenteredButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menuSpan{
+    display: flex;
+    width: 100%;
+}
+
+@-moz-document url-prefix() {
+    .flexSizeFix{
+        flex: 1 1 auto;
+        width: 0;
+        max-width: 20%;
+    }
+}
+
+
+@keyframes displayMenu {
+    0% {
+        bottom: -85%;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes hideMenu {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: -85%;
+
+    }
+}

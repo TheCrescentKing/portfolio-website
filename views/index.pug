@@ -4,4 +4,7 @@ block content
   h1 Projects
   .projectsContainer
     each item in projects
-      h4= item
+      .projectCell
+        img.thumbnail.orangeBorder(src='projects/' + item + '/thumbnail.png')
+        a(href='projects/' + item + '/index.html')
+          h4= item
