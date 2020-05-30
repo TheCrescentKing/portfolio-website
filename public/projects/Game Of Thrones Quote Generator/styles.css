@@ -1,0 +1,30 @@
+body{
+  background-color: #F0F0F0;
+}
+
+#titleText{
+  font-family: 'IM Fell French Canon SC', serif;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#centerDiv{
+    background-color: #e0e0eb;
+    border-radius: 20px 20px 20px 20px;
+    text-align:center;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+.centered{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#getQuote{
+  background-color: transparent;
+  border-color: black;
+  border-radius: 10px;
+}

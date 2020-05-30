@@ -1,0 +1,4 @@
+{
+  "repo": "GOT-quotes",
+  "about": "A webpage that uses an API to generate Game Of Thrones quotes and allows the user to tweet them using the Twitter API. \n Bootstrap and jQuery were used. I made this during the summer of 2018."
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Wikipedia Viewer</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+  </head>
+  <body>
+    <div class="container-fluid text-center">
+      <a href="" id="imageLink">
+        <img class ="wikiImage" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Wikipedia-iconsdaa.png" alt="Wikipedia icon">
+      </a>
+      <div id="searchBox">
+        <input type="text" class="centered text-center" id="search" placeholder="Search Wikipedia"/>
+      </div>
+      <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+        <div id="randomPage" class="centered">
+          Random Wikipedia Page
+        </div>
+      </a>
+      <div id="resultsDiv" class="text-left">
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+    <script src="./script.js" charset="utf-8"></script>
+  </body>
+</html>
