@@ -98,3 +98,18 @@ div.mainbody {
 .orangeBorder{
   border: 0.3rem groove #B57A00;
 }
+
+.projectContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.projectContainer p{
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1rem;
+}
+
+.projectImg{
+  object-fit: contain;
+}

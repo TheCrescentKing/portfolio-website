@@ -1,0 +1,2 @@
+# currency-converter
+This is a mobile currency converter application. It works offline when saved to the home-screen of the mobile device. It uses the European Central Bank's API. This was a university project.

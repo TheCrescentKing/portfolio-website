@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  .projectContainer
+    h1= projectName
+    img.projectImg.orangeBorder(src='/projects/' + projectName + '/thumbnail.png')
+    h3 About
+      p= data.about
+      a(href='https://github.com/j-a-m-m/' + data.repo, target='_blank') GitHub Link
+      br
+      if data.hasIndex
+        a(href='/projects/' + projectName + '/index.html') Try the website!

@@ -1,0 +1,4 @@
+{
+  "repo": "javafx-thread-monitor",
+  "about": "This was university project done in 2019 to learn about threads and concurrency, the idea was to create a visualisation for the running threads and all the Java information about the threads e.g. Thread group, State etc. The GUI was done with JavaFX."
+}

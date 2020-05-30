@@ -35,7 +35,7 @@ function getECBRatesAndLoad(){
     if(navigator.onLine) {
 
         let xhr = new XMLHttpRequest();
-        xhr.open('GET', 'https://devweb2018.cis.strath.ac.uk/~aes02112/ecbxml.php');
+        xhr.open('GET', 'https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml');
 
         xhr.onreadystatechange = function () {
 
