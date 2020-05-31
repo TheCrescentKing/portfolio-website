@@ -1,5 +1,5 @@
 var express = require('express');
-var dataFunctions = require('./data/ProjectDataFunctions.js')
+var dataFunctions = require('../utils-module').projectDataUtils;
 var router = express.Router();
 
 
