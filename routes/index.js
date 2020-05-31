@@ -1,5 +1,5 @@
 var express = require('express');
-var dataFunctions = require('../data/projectDataFunctions.js')
+var dataFunctions = require('./data/projectDataFunctions.js')
 var router = express.Router();
 
 // I don't think this is ideal, does this make the whole website not render unltil the projects are returned?
