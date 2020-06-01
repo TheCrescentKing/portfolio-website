@@ -1,10 +1,25 @@
 extends layout
 
 block content
-  h1 Projects
-  .projectsContainer
-    each item in projects
-      .projectCell
-        img.thumbnail.orangeBorder(src='projects/' + item + '/thumbnail.png')
+  style(type='text/css') @import url("stylesheets/slideshow.css")
+  h1.alignCenter Projects
+  .slideshow-container
+    each item, index in projects
+
+      .mySlides.fade
+        .numbertext
+          =index+1 + '/' + projects.length
+        img.thumbnail(src='projects/' + item + '/thumbnail.png')
         a(href='/project/' + item)
-          h4= item
+          .caption-text
+            =item
+
+    a.prev(onclick='plusSlides(-1)') &#10094;
+    a.next(onclick='plusSlides(1)') &#10095;
+    br
+    .dotContainer.alignCenter
+      each item, index in projects
+        - let i = index + 1
+        span.dot(onclick='currentSlide(' + i + ')')
+
+  script(src='javascripts/indexScripts.js')

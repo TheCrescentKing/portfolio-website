@@ -47,7 +47,6 @@ div.mainbody {
   grid-area: mainbody;
   width: 50rem; /* mainbody width is fixed preventing body content from reflowing */
   justify-self: center; /* and always in the center */
-  text-align: center;
 }
 
 @media screen and (max-width: 50rem){ /* If viewport width < 50rem */
@@ -71,45 +70,6 @@ div.mainbody {
   width: auto;
 }
 
-/* index page css */
-
-.projectsContainer{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-
-.projectCell{
-  width: 15rem;
-  height: auto;
-  flex-grow: 1;
-}
-
-.thumbnail{
-  width: inherit;
-  height: auto;
-  display:inline-block;
-  margin:0;
-  vertical-align:top;
-}
-
-.orangeBorder{
-  border: 0.3rem groove #B57A00;
-}
-
-.projectContainer{
-  display: flex;
-  flex-direction: column;
-}
-
-.projectContainer p{
-  text-align: justify;
-  text-justify: inter-word;
-  font-size: 1rem;
-}
-
-.projectImg{
-  object-fit: contain;
+.alignCenter{
+  text-align: center;
 }
