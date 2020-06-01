@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# ARchive folder for historical/documentation purposes
+archive/
