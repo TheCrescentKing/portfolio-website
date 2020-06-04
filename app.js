@@ -17,7 +17,11 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+// Serve Public directory
 app.use(express.static(path.join(__dirname, 'public')));
+// Serve FontAwesome
+app.use('/stylesheets/fontawesome', express.static(__dirname + '/node_modules/@fortawesome/fontawesome-free/'));
 
 app.use('/', indexRouter);
 app.use('/project', projectRouter)

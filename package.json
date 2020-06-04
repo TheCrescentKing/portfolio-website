@@ -10,6 +10,7 @@
     "devstart": "SET DEBUG=node-website:* & nodemon ./bin/www"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "cookie-parser": "~1.4.5",
     "debug": "~4.1.1",
     "express": "~4.17.1",
