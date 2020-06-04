@@ -1,6 +1,7 @@
 	html, body
 	{
-		height: 100%;
+		width: auto;
+		height: auto;
 	}
 
 	body
@@ -12,6 +13,7 @@
 		font-size: 1em;
 		font-weight: 400;
 		color: #000000;
+
 	}
 
 
@@ -56,7 +58,6 @@
 	.container
 	{
 		margin: 0px auto;
-		width: 1200px;
 	}
 
 	/*********************************************************************************/
