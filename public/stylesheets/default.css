@@ -188,8 +188,6 @@
 
 	.image-full
 	{
-		display: block;
-		width: 100%;
 		margin: 0 0 3em 0;
 	}
 
@@ -466,7 +464,7 @@
 /* Welcome and About Project                                                     */
 /*********************************************************************************/
 
-	#welcome, #project-details
+	.container
 	{
 		overflow: hidden;
 		padding: 8em 0em;
@@ -474,15 +472,15 @@
 		color: rgba(255,255,255,0.3);
 	}
 
-	#welcome .content, #project-details .content
+	.content
 	{
 		padding: 0em 8em;
 	}
 
 
 
-	#welcome a, #project-details a,
-	#welcome strong, #project-details strong,
+	.container a,
+	.container strong,
 	{
 		color: rgba(255,255,255,0.6);
 	}
@@ -600,4 +598,13 @@
 		padding: 1%;
 		margin: 1%;
 		width: auto;
+	}
+
+	/*********************************************************************************/
+	/* About me                                                                      */
+	/*********************************************************************************/
+
+	.pdfContainer{
+		width: 90vw;
+		height: 80vh;
 	}

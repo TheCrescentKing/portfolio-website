@@ -12,7 +12,7 @@ router.get('/:project', function(req, res, next) {
       dataObject = ['An error has occurred.']
     }
     dataObject.hasIndex = dataFunctions.hasIndexJS(req.params.project);
-    res.render('project', { title: 'JAMM\'s Portfolio', projectName:  req.params.project, data: dataObject});
+    res.render('project', { title: 'John A. McMenemy', projectName:  req.params.project, data: dataObject});
   });
 });
 

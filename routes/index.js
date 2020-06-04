@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
       projects = ['An error has occurred.']
     }
 
-    res.render('index', { title: 'JAMM\'s Portfolio', projects:  projects, aboutInfo: aboutInfo});
+    res.render('index', { title: 'John A. McMenemy', projects:  projects, aboutInfo: aboutInfo});
   });
 });
 
