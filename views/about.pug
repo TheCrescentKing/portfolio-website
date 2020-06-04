@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  #wrapper-about
+    #about-me-container.container
+      .title
+        h2
+          i  Curriculum Vitae
+      .content
+        embed.pdfContainer(src='/files/Resume_PublicVersion.pdf', type='application/pdf')
