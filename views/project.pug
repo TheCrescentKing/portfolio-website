@@ -1,12 +1,16 @@
 extends layout
 
 block content
-  .projectContainer
-    h1= projectName
-    img.projectImg.orangeBorder(src='/projects/' + projectName + '/thumbnail.png')
-    h3 About
-      p= data.about
-      a(href='https://github.com/j-a-m-m/' + data.repo, target='_blank') GitHub Link
-      br
-      if data.hasIndex
-        a(href='/projects/' + projectName + '/index.html') Try the website!
+  #wrapper-about
+    #project-details.container
+      .title
+        h2= projectName
+      img.image-full(src='/projects/' + projectName + '/thumbnail.png')
+      .content
+        .title
+          h2 About
+        p= data.about
+        .project-links
+          a.button(href='https://github.com/j-a-m-m/' + data.repo, target='_blank') GitHub Link
+          if data.hasIndex
+            a.button(href='/projects/' + projectName + '/index.html') Try the website!

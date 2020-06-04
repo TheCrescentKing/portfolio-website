@@ -9,7 +9,7 @@
 		padding: 0px;
 		background: #00838C;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 12pt;
+		font-size: 1em;
 		font-weight: 400;
 		color: #000000;
 	}
@@ -35,6 +35,7 @@
 	p
 	{
 		line-height: 180%;
+		font-size: 1.4rem;
 	}
 
 	strong
@@ -451,10 +452,10 @@
 	}
 
 /*********************************************************************************/
-/* Welcome                                                                       */
+/* Welcome and About Project                                                     */
 /*********************************************************************************/
 
-	#welcome
+	#welcome, #project-details
 	{
 		overflow: hidden;
 		padding: 8em 0em;
@@ -462,17 +463,22 @@
 		color: rgba(255,255,255,0.3);
 	}
 
-	#welcome .content
+	#welcome .content, #project-details .content
 	{
 		padding: 0em 8em;
 	}
 
 
 
-	#welcome a,
-	#welcome strong
+	#welcome a, #project-details a,
+	#welcome strong, #project-details strong,
 	{
 		color: rgba(255,255,255,0.6);
+	}
+
+	.project-links a{
+		padding: 1%;
+		margin: 1%;
 	}
 
 /*********************************************************************************/
