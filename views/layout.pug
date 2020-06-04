@@ -1,17 +1,58 @@
 doctype html
-html
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    .container
-      .header
-        a(href='/')
-          img#logo(src='/images/jamm-logo.png')
-      .panel.left
-      .mainbody
-        block content
-      .panel.right
-      .footer
+//
+  Design by TEMPLATED
+  http://templated.co
+  Released for free under the Creative Commons Attribution License
+  Name       : Fervency
+  Description: A two-column, fixed-width design with dark color scheme.
+  Version    : 1.0
+  Released   : 20131006
+  Modified and Adapted by: John. A. McMenemy
+head
+  meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
+  title
+  meta(name='keywords' content='')
+  meta(name='description' content='')
+  link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet')
+  link(href='stylesheets/default.css' rel='stylesheet' type='text/css' media='all')
+  link(href='stylesheets/fonts.css' rel='stylesheet' type='text/css' media='all')
+body
+  #header-wrapper
+    #header.container
+      #logo
+        span.icon.icon-fire
+        h1
+          a(href='/') John A. McMenemy
+        span
+          | Design by
+          a(href='http://templated.co' rel='nofollow')  TEMPLATED
+      #menu
+        ul
+          li.current_page_item
+            a(href='/' accesskey='1' title='') Homepage
+          li
+            a(href='#' accesskey='3' title='') About Me
+          li
+            a(href='#' accesskey='2' title='') Projects
+          li
+            a(href='#' accesskey='5' title='') Contact Me
+  block content
+  #wrapper-footer
+    #footer.container
+      div
+        header.title
+          h2 Get in touch
+          span.byline Find me on these sites!
+        ul.contact
+          li
+            a.icon.icon-github(href='https://github.com/j-a-m-m', target='_blank', alt="GitHub")
+              span GitHub
+          li
+            a.icon.icon-linkedin(href='https://www.linkedin.com/in/mcmenemy-john/', target='_blank', alt="LinkedIn")
+              span LinkedIn
+  #copyright
+    p
+      | &copy; John A. McMenemy. All rights reserved.
+      |  | Design by
+      a(href='http://templated.co' rel='nofollow')  TEMPLATED
+      | .

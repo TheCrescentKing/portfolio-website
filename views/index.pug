@@ -1,25 +1,29 @@
 extends layout
 
 block content
-  style(type='text/css') @import url("stylesheets/slideshow.css")
-  h1.alignCenter Projects
-  .slideshow-container
-    each item, index in projects
+  #wrapper-about
+    #welcome.container
+      .title
+        h2 Welcome to my website
+        span.byline Hi, I'm John
+      .content
+        p
+          | I'm a trilingual, lifelong learner who loves technology,
+          | science, psychology, philosophy, exercise and nutrition.
+          | I feel at my best when I’m doing something that I know is helping
+          | people with their lives.
+        a.button(href='#') Find out more
+  #wrapper-projects
+    #portfolio
+      .title
+        h2 Design Portfolio
+        span.byline Projects I have made on my own or during university
 
-      .mySlides.fade
-        .numbertext
-          =index+1 + '/' + projects.length
-        img.thumbnail(src='projects/' + item + '/thumbnail.png')
-        a(href='/project/' + item)
-          .caption-text
-            =item
-
-    a.prev(onclick='plusSlides(-1)') &#10094;
-    a.next(onclick='plusSlides(1)') &#10095;
-    br
-    .dotContainer.alignCenter
-      each item, index in projects
-        - let i = index + 1
-        span.dot(onclick='currentSlide(' + i + ')')
-
-  script(src='javascripts/indexScripts.js')
+        .projects
+          each item, index in projects
+            .column
+              .box
+                a(href='/project/' + item)
+                  img.image.image-half-height(src='projects/' + item + '/thumbnail.png' alt='')
+                h3= item
+                a.button.button-small(href='/project/' + item) More
