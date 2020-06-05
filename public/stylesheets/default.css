@@ -188,6 +188,8 @@
 
 	.image-full
 	{
+		max-width: 90vw;
+		max-height: 90vh;
 		margin: 0 0 3em 0;
 	}
 
