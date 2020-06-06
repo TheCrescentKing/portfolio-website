@@ -34,8 +34,14 @@ function getECBRatesAndLoad(){
 
     if(navigator.onLine) {
 
+
+        // have to sue the free cors anywhere API to get the data (can be a bit slow)
+
         let xhr = new XMLHttpRequest();
-        xhr.open('GET', 'https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml');
+        let ecbApi = 'https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml';
+        let cors_api_host = 'cors-anywhere.herokuapp.com';
+        let cors_api_url = 'https://' + cors_api_host + '/' + ecbApi;
+        xhr.open('GET', );
 
         xhr.onreadystatechange = function () {
 
