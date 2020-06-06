@@ -41,7 +41,7 @@ function getECBRatesAndLoad(){
         let ecbApi = 'https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml';
         let cors_api_host = 'cors-anywhere.herokuapp.com';
         let cors_api_url = 'https://' + cors_api_host + '/' + ecbApi;
-        xhr.open('GET', );
+        xhr.open('GET', cors_api_url);
 
         xhr.onreadystatechange = function () {
 
