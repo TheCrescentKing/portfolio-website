@@ -5,7 +5,10 @@ block content
     #project-details.container
       .title
         h2= projectName
-      img.image-full(src='/projects/' + projectName + '/thumbnail.png')
+      if data.hasVideo
+        iframe.video-frame(width="560", height="315", src= data.videoLink , frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+      else
+        img.image-full(src='/projects/' + projectName + '/thumbnail.png')
       .content
         .title
           h2 About
