@@ -1,0 +1,6 @@
+{
+  "repo": "CPP-Ssnake",
+  "about": "Made at the end of 2016, this was my first 'independent' project made after my first semester at university Lyon 1 (UCBL) [4 months of uni coding classes in C++ & algorithms & math]. It was built using a library provided by the lecturer that served as a wrapper for SDL2. The game has some twists of my own: obstacles, a Mario-like 'Star Boost' and an option to play with a background where the 'food' gets harder to find as it tries to blend in with the background.",
+  "hasVideo": "true",
+  "videoLink": "https://www.youtube.com/embed/xO-whE5Uzyo"
+}
