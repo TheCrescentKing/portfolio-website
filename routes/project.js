@@ -11,7 +11,8 @@ router.get('/:project', function(req, res, next) {
       console.log(dataObject);
       dataObject = ['An error has occurred.']
     }
-    dataObject.hasIndex = dataFunctions.hasIndexJS(req.params.project);
+    // Check if there is an index.html in the project's folder
+    dataObject.hasHTMLIndex = dataFunctions.hasIndexPage(req.params.project);
     res.render('project', { title: 'John A. McMenemy', projectName:  req.params.project, data: dataObject});
   });
 });

@@ -1,4 +1,4 @@
 {
   "repo": "weather-website",
-  "about": "A little weather website I made in 2018 using FreeCodeCamp's weather API. After allowing your location on the browser please wait for the data to load. (I should add a loading bar). Bootstrap and jQuery were used."
+  "about": "At the moment the website does not work as I need an HTTPS certificate. <br> A little weather website I made in 2018 using FreeCodeCamp's weather API. After allowing your location on the browser please wait for the data to load. (I should add a loading bar). Bootstrap and jQuery were used."
 }

@@ -28,7 +28,7 @@ module.exports = {
       return callback(JSON.parse(data));
     })
   },
-  hasIndexJS: function hasIndexJS(projectName){
+  hasIndexPage: function hasIndexPage(projectName){
     let filePath = dir + projectName + '/index.html';
     return (fs.existsSync(filePath));
   }
