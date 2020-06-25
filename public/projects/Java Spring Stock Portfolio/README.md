@@ -1,0 +1,2 @@
+# stock-portfolio-java-spring
+This was a group project done during my second year of university. In a class given by J.P. Morgan we created a Java Spring application that got stock data from an API we were provided and then we parsed the data and manipulated it to nicely display it on a website using the Apache Velocity templating engine. Note: some of this code is not mine, which is why this under a No-Licence repository!

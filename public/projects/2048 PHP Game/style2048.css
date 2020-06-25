@@ -1,0 +1,65 @@
+body {
+    margin: 10;
+    padding: 0;
+}
+
+.inline-block-center div {
+  display: inline-block;
+  text-align: left;
+}
+
+.paragraph-left{
+	margin-right: 75%;
+}
+
+.title{
+	font-family: 'Russo One', sans-serif;
+	font-size: 250:
+	margin-top: 2%;
+	margin-right: 75%;
+	background: green;
+}
+
+#rules{
+	background: yellow;
+	margin-right: 75%;
+}
+
+#score{	
+	margin-right: 75%;
+}
+
+.game{
+	background: #F2F2F2;
+	border-style: solid;
+	border-width: 5px;
+	border-color: red;
+}
+
+td{
+	width: 100px;
+	height: 100px;
+	border-style: solid;
+	border-width: 3px;
+}
+
+#cssTable td{
+	text-align: center;
+	vertical-align: middle;
+}
+
+#lienUE{
+	margin-right: 75%;
+}
+
+#buttonActualiser{
+}
+
+#nouvellePartie{
+	
+	margin-top: 1%;
+}
+
+.buttonDirections{
+	margin-top: 1%;
+}

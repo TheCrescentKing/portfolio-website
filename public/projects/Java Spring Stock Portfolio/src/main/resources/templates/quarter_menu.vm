@@ -1,0 +1,18 @@
+<html>
+
+<head>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body style="color: black">
+<h1><b>Select a quarter you would like to view</b></h1>
+<p><a href="/prices/20015-Q1">go to Q1</a></p>
+<p><a href="/prices/20015-Q2"">go to Q2</a></p>
+</body>
+</html>

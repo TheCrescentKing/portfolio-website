@@ -1,0 +1,25 @@
+[
+  {
+    "EPIC": "NEL",
+    "Date Time":"20015-Q1",
+    "Mid Price":"4.89",
+    "Currency":"GBP"
+  },
+  {
+    "EPIC": "CLA",
+    "Date Time":"20015-Q2",
+    "Mid Price":"3.98",
+    "Currency":"GBP"
+  },
+  {
+    "EPIC": "MIC",
+    "Date Time": "20015-Q1",
+    "Mid Price": "1.99",
+    "Currency": "GBP"
+  },
+  {    "EPIC": "GEO",
+    "Date Time":"20015-Q2",
+    "Mid Price":"3.13",
+    "Currency":"GBP"
+  }
+]

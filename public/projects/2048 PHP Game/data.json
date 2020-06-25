@@ -1,0 +1,5 @@
+{
+  "about": "This was a PHP project done during my first year of University (in France). Meant as a quick way to practice PHP, I re-created the 2048 game logic. <br> At the moment I cannot run it from my server as it isn't an Apache server.",
+  "repo": "2048-php",
+  "hideIndexLink": "true"
+}

@@ -16,4 +16,5 @@ block content
         .project-links
           a.button(href='https://github.com/j-a-m-m/' + data.repo, target='_blank') GitHub Link
           if data.hasHTMLIndex
-            a.button(href='/projects/' + projectName + '/index.html') Try the website!
+            if !data.hideIndexLink
+              a.button(href='/projects/' + projectName + '/index.html') Try the website!

@@ -1,0 +1,29 @@
+<html>
+
+<head>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+<a href="/equities/b/$sectorPrice/export" download="equities_sector.csv">Export this table</a>
+<body style="color: black">
+
+<table style="width:100%">
+    <tr>
+        <th>EPIC</th>
+        <th>Mid Price</th>
+    </tr>
+    #foreach($equity in $prices)
+        <tr>
+            <td><a href="/equities/$equity.Epic">$equity.Epic</a></td>
+            <td>$equity.MidPrice</td>
+        </tr>
+    #end
+</table>
+
+</body>
+</html>

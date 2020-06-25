@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet"> 
+<title>Le jeu 2048</title>
+<link rel="stylesheet" href="style2048.css" />
+</head>
+<body>
+<main class="inline-block-center">
+<div>
+<h1 class="title">Le jeu 2048</h1>
+<h2 id="rules">Régles :</h2>
+<p class="paragraph-left">Le but du jeu est de faire glisser des tuiles sur une grille, pour combiner les tuiles de mmes valeurs et créer ainsi une tuile portant le nombre 2048. Le joueur peut toutefois continuer à jouer après cet objectif atteint pour faire le meilleur score possible.
+Le jeu se présente sous la forme d'une grille 4*4. Au début de la partie, deux cases contiennent un chiffre (2 ou 4). Les nombres peuvent se déplacer à droite, à gauche, en haut ou en bas. Quand deux cases de mme valeur se rencontrent, elles fusionnent en une case qui vaut la somme des 2 cases fusionnées. Après chaque action du joueur, une nouvelle case apparat avec pour valeur 2 ou 4. Le but est donc d'obtenir une case valant 2048 avant que la grille ne soit pleine et qu'aucun mouvement ne soit plus possible. Si plus aucun mouvement n'est possible, la partie est perdue.</p>
+<a href="http://perso.univ-lyon1.fr/olivier.gluck/supports_enseig.html#LIFASR2" target="_blank"><p id="lienUE">Lien vers la page de l'UE</p></a>
+<form style="display: inline" id="buttonActualiser" action="https://lifasr2.univ-lyon1.fr/john.mcmemeny/jeu-2048/index.html" method="get">
+  <button>Acualiser la page</button>
+</form>
+</div>
+<div>
+<h2 id="score">Score :</h2>
+<table class="game" id="cssTable">
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</table>
+<form name="jeu-2048" method="get" action="jeu-2048.php">
+	<input id="nouvellePartie" type="submit" name="action-joueur" value="Nouvelle Partie" />
+	<div class="buttonDirections">
+	<input type="submit" name="action-joueur" value="Gauche" />
+	<input type="submit" name="action-joueur" value="Haut" />
+	<input type="submit" name="action-joueur" value="Bas" />
+	<input type="submit" name="action-joueur" value="Droit" />
+	</div>
+</form>
+</div>
+</main>
+</body>
+</html>
+

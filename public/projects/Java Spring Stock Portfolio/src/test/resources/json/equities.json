@@ -1,0 +1,17 @@
+[
+  {
+    "EPIC":"III",
+    "Company Name":"3I GROUP PLC",
+    "Asset Type":"Equity",
+    "Sector":"Financials",
+    "Currency":"GBP"
+  },
+
+  {
+    "EPIC":"ADN",
+    "Company Name":"ABERDEEN ASSET MANAGEMENT PLC",
+    "Asset Type":"Equity",
+    "Sector":"Financials",
+    "Currency":"GBP"
+  }
+  ]
